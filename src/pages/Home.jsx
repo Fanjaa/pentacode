@@ -1,40 +1,37 @@
+import About from "../components/home/About";
+import Choose from "../components/home/Choose";
+import Client from "../components/home/Client";
+import Contact from "../components/home/Contact";
+import Inquire from "../components/home/Inquire";
+import Intro from "../components/home/Intro";
+import Service from "../components/home/Service";
 
 const Home = () => {
   return (
-    <section id="home" className="grid grid-cols-2 min-h-screen">
-        {/* Grid Left */}
-        <div className="grid grid-rows-2 border-2 border-black p-8 gap-4">
-            <div className="flex flex-col justify-center gap-8 border-b-4">
-                <h1 className="text-6xl font-semibold">Kyiv</h1>
-                <h1 className="text-6xl font-semibold">LuxeBouquets</h1>
-                <p>Discover Uniquely Crafted Bouquets and Gifts for Any Occasion: Spread Joy with Our Online Flower Delivery Service</p>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-                <div className="flex items-center justify-center">
-                    <img src="https://placehold.co/400" alt=""/>
-                </div>
-                <div className="flex border-l-4 pl-4 items-end justify-end">
-                    <h1>Experience the joy of giving with our modern floral studio. Order online and send fresh flowers, plants and gifts today.</h1>
-                </div>
-            </div>
-        </div>
-        {/* Grid Right */}
-        <div className="grid grid-cols-2 border-2 border-black">
-            <div className="flex border border-black items-center text-center">
-                <h1 className="text-6xl font-medium">Fresh Flowers</h1>
-            </div>
-            <div className="border border-black">
-                <img src="https://placehold.co/400" alt="" />
-            </div>
-            <div className="border border-black">
-                <img src="https://placehold.co/400" alt="" />
-            </div>
-            <div className="flex border border-black items-center text-center">
-                <h1 className="text-6xl font-medium">Dried Flowers</h1>
-            </div>
-        </div>
-    </section>
-  )
-}
+    <div id="home">
+        <section id="intro" className="grid grid-cols-2">
+            <Intro />
+        </section>
+        <section id="about" className="grid grid-cols-2">
+            <About />
+        </section>
+        <section id="choose" className="grid grid-cols-2">
+            <Choose />
+        </section>
+        <section id="contact" className="grid grid-cols-2">
+            <Contact />
+        </section>
+        <section id="service" className="grid">
+            <Service />
+        </section>
+        <section id="inquire" className="flex">
+            <Inquire />
+        </section>
+        <section id="client" className="flex">
+            <Client />
+        </section>
+    </div>
+  );
+};
 
-export default Home
+export default Home;

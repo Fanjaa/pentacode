@@ -1,3 +1,113 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Gilroy', sans-serif;
+}
+
+/* Mendefinisikan kelas kustom */
+@layer components {
+    /* Desktop Styling */
+    .heading1 {
+        @apply text-heading1 font-semibold leading-120; /* Gabungkan font size dan weight */
+    }
+    .heading2 {
+        @apply text-heading2 font-semibold leading-120;
+    }
+    .heading3 {
+        @apply text-heading3 font-medium leading-120;
+    }
+    .heading4 {
+        @apply text-heading4 font-medium leading-120;
+    }
+    .heading5 {
+        @apply text-heading5 font-medium leading-120;
+    }
+    .heading6 {
+        @apply text-heading6 font-medium leading-120;
+    }
+    .subtitle {
+        @apply text-subtitle font-medium leading-120;
+    }
+    .body {
+        @apply text-body font-regular leading-140;
+    }
+    .button {
+        @apply text-button font-medium leading-120 uppercase;
+    }
+    .links {
+        @apply text-links font-medium leading-120;
+    }
+    .overlines {
+        @apply text-overline font-medium leading-120 uppercase ;
+    }
+    .caption {
+        @apply text-caption font-regular leading-120;
+    }
+    .captionSmall {
+        @apply text-captionSmall font-medium leading-120;
+    }
+
+    /* Mobile Styling */
+    .headingMobile1 {
+        @apply text-headingMobile1 font-medium leading-120; /* Gabungkan font size dan weight */
+    }
+    .headingMobile2 {
+        @apply text-headingMobile2 font-medium leading-120;
+    }
+    .headingMobile3 {
+        @apply text-headingMobile3 font-regular leading-120;
+    }
+    .headingMobile4 {
+        @apply text-headingMobile4 font-regular leading-120;
+    }
+    .headingMobile5 {
+        @apply text-headingMobile5 font-medium leading-120;
+    }
+    .headingMobile6 {
+        @apply text-headingMobile6 font-medium leading-100;
+    }
+    .subtitleMobile {
+        @apply text-subtitleMobile font-medium leading-140;
+    }
+    .bodyMobile {
+        @apply text-bodyMobile font-regular leading-140;
+    }
+    .buttonMobile {
+        @apply text-buttonMobile font-medium leading-100 uppercase;
+    }
+    .linksMobile {
+        @apply text-linksMobile font-medium leading-120;
+    }
+    .overlineMobile {
+        @apply text-overlineMobile font-medium leading-120 uppercase;
+    }
+    .captionMobile {
+        @apply text-captionMobile font-regular leading-120;
+    }
+    .captionSmallMobile {
+        @apply text-captionSmallMobile font-medium leading-120;
+    }
+  }
+  
