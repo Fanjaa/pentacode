@@ -2,7 +2,7 @@
 
 ## Video Demo
 
-[Klik di sini untuk melihat video demo](https://github.com/Fanjaa/pentacode/blob/main/assets/videoAssesment/Assesment-Pentacode.mp4)
+[Klik di sini untuk melihat video demo](https://github.com/Fanjaa/pentacode/blob/main/src/assets/videoAssesment/Assesment-Pentacode.mp4)
 
 
 ## Cara Instalasi
