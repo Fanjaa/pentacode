@@ -6,13 +6,13 @@ const Hero = () => {
       {/* Left */}
       <div className="grid grid-rows-2 border border-t-0 border-black px-14 gap-4 sticky h-[calc(100vh-4rem)] top-16 max-lg:static max-lg:h-auto max-md:p-4 lg:pb-8">
         <div className="flex flex-col justify-center border-b max-md:pb-4">
-          <h1 className="heading1 text-black max-md:headingMobile1">Kyiv</h1>
-          <h1 className="heading1 text-black max-md:headingMobile1">
+          <h1 className="heading1 text-black max-md:headingMobile1" data-aos="fade-up">Kyiv</h1>
+          <h1 className="heading1 text-black max-md:headingMobile1" data-aos="fade-up">
             LuxeBouquets<sup className="heading3 max-md:headingMobile3">®</sup>
           </h1>
-          <p className="subtitle font-regular text-black max-md:captionMobile">
+          <p className="subtitle font-regular text-black max-md:captionMobile" data-aos="fade-up">
             Discover Uniquely Crafted Bouquets and Gifts for Any Occasion:{" "}
-            <span className="italic">
+            <span className="italic" data-aos="fade-up">
               Spread Joy with Our Online Flower Delivery Service
             </span>
           </p>
@@ -21,13 +21,14 @@ const Hero = () => {
           <div className="grid grid-cols-2 max-md:gap-0 mb-4 max-h-60 max-lg:max-h-96 max-lg:gap-0">
             <div className="flex items-center justify-center h-full w-full overflow-hidden pr-4 max-md:pr-0">
               <img
+                data-aos="fade-up"
                 className="object-cover w-full h-full max-lg:pr-4 max-md:pr-4"
                 src={assets.imgHero}
                 alt="Image Hero"
               />
             </div>
             <div className="flex border-l pl-4 items-end justify-end max-lg:pl-8 max-md:pl-4">
-              <h1 className="caption max-md:captionSmall max-sm:font-regular">
+              <h1 className="caption max-md:captionSmall max-sm:font-regular" data-aos="fade-up">
                 Experience the joy of giving with our modern floral studio.
                 Order online and send fresh flowers, plants and gifts today.
               </h1>

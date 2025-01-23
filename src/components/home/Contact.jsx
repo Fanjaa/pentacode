@@ -10,7 +10,7 @@ const Contact = () => {
           <p className="subtitle max-md:subtitleMobile">We will call you back</p>
           <div className="flex gap-4 max-md:flex-col">
             <input className="button border border-lightGray p-4 text-center w-1/2 max-md:w-full" placeholder="+380 xx xxx xx xx"></input>
-            <button className="button border p-4 w-1/2 bg-black text-white max-md:w-full">Book a call</button>
+            <button className="button border p-4 w-1/2 bg-black text-white max-md:w-full hover:bg-transparent hover:text-black">Book a call</button>
           </div>
         </div>
         

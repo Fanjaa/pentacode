@@ -12,7 +12,7 @@ const Inquire = () => {
             on-trend floral décor for your special day. Trust us to bring your
             vision to life.
           </p>
-          <button className="button border p-4 w-44 mt-8 max-md:buttonMobile">
+          <button className="button border p-4 w-44 mt-8 max-md:buttonMobile hover:bg-black hover:text-white">
             Inquire Now
           </button>
         </div>

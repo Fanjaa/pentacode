@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { assets } from "../../assets/assets"
 
 const Footer = () => {
@@ -6,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col border-r item p-8 gap-4 max-lg:border-b max-lg:p-12">
             <p className="links font-regular max-md:linksMobile max-md:font-regular">Remember to offer beautiful flowers from Kyiv LuxeBouquets Valentines Day, Mothers Day, Christmas... Reminds you 7 days before. No spam or sharing your address</p>
             <input className="button border p-4 max-md:buttonMobile" type="text" placeholder="Your Email"/>
-            <button className="button border py-4 bg-black text-white max-md:buttonMobile">Remind</button>
+            <button className="button border py-4 bg-black text-white max-md:buttonMobile hover:bg-transparent hover:text-black">Remind</button>
         </div>
         <div className="flex flex-col border-r item p-8 gap-4 max-lg:border-b max-lg:p-12">
             <h1 className="heading5 text-gray max-md:headingMobile5">Contact Us</h1>
@@ -37,7 +38,7 @@ const Footer = () => {
             <h1 className="heading5 text-gray max-md:headingMobile5">Shop</h1>
             <ul className="links flex flex-col gap-2 max-md:linksMobile">
                 <li><a href="#">All Products</a></li>
-                <li><a href="#">Fresh Flowers</a></li>
+                <li><Link to={'/category'}>Fresh Flowers</Link></li>
                 <li><a href="#">Dried Flowers</a></li>
                 <li><a href="#">Live Plants</a></li>
                 <li><a href="#">Designer Vases</a></li>

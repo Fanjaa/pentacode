@@ -16,14 +16,14 @@ const Service = () => {
           </div>
 
           <div className="flex flex-col  border-l border-black overflow-y-auto p-14 justify-center items-center text-center gap-4 max-lg:p-20 max-md:px-4">
-            <p className="overlines max-md:overlinesMobile">Service</p>
-            <h1 className="heading3 max-md:headingMobile3">Flower Subcriptions</h1>
-            <p className="body max-md:bodyMobile">
+            <p className="overlines max-md:overlinesMobile" data-aos="fade-up">Service</p>
+            <h1 className="heading3 max-md:headingMobile3" data-aos="fade-up">Flower Subcriptions</h1>
+            <p className="body max-md:bodyMobile" data-aos="fade-up">
               Experience the convenience and savings of regular flower
               deliveries with our flexible subscription service - up to 30% more
               profitable than one-time purchases.
             </p>
-            <button className="button border p-4 w-44 mt-8 max-md:buttonMobile">Learn More</button>
+            <button className="button border p-4 w-44 mt-8 max-md:buttonMobile hover:bg-black hover:text-white" data-aos="fade-up">Learn More</button>
           </div>
         </div>
       </div>

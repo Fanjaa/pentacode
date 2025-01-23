@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import About from "../components/home/About";
 import Choose from "../components/home/Choose";
 import Client from "../components/home/Client";
@@ -5,9 +6,19 @@ import Contact from "../components/home/Contact";
 import Hero from "../components/home/Hero";
 import Inquire from "../components/home/Inquire";
 import Service from "../components/home/Service";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const Home = () => {
-  return (
+
+    useEffect(() => {
+        Aos.init({
+          duration: 500, 
+          once: true,
+        });
+      }, []);
+
+    return (
     <div id="home">
         <section id="hero" className="grid grid-cols-2 max-lg:grid-cols-1">
             <Hero />

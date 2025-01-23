@@ -3,6 +3,8 @@ import { assets } from "../../assets/assets";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
 
   return (
     <nav className="sticky top-0 z-50 border bg-white">
@@ -29,7 +31,9 @@ const Navbar = () => {
         {/* <a href="#" className="text-2xl font-bold">Flowers Pentacode</a> */}
 
         {/* Cart Icon (Mobile) */}
-        <button className="text-black border-l px-8 py-4 max-md:px-4 max-md:py-2">
+        <button 
+          onClick={() => setIsCartOpen(true)}
+          className="text-black border-l px-8 py-4 max-md:px-4 max-md:py-2">
           <svg
           className="w-8 h-8 max-md:w-4 max-md:h4"
             viewBox="0 0 16 20"
@@ -61,7 +65,7 @@ const Navbar = () => {
             <a href="#">Sign in</a>
           </li>
           <li className="border-l py-6 px-12">
-            <a href="#">Cart</a>
+            <a href="#" onClick={() => setIsCartOpen(true)}>Cart</a>
           </li>
         </div>
       </ul>
@@ -123,11 +127,76 @@ const Navbar = () => {
         </div>
         <div className="flex flex-col border-b border-gray-300 py-6 px-6 gap-4">
           <div className="flex gap-8 items-center justify-between">
-            <a href="#"><img src={assets.instagram} alt="Instag href=ram Icon" /></a>
+            <a href="#"><img src={assets.instagram} alt="Instagram Icon" /></a>
             <a href="#"><img src={assets.pinteres} alt="Pinteres Icon" /></a>
             <a href="#"><img src={assets.facebook} alt="Facebook Icon" /></a>
             <a href="#"><img src={assets.twitter} alt="Twitter Icon" /></a>
             <a href="#"><img src={assets.telegram} alt="Telegram Icon" /></a>
+          </div>
+        </div>
+      </div>
+
+      {/* Cart Menu */}
+      <div
+        className={`fixed top-0 right-0 h-full w-full bg-white shadow-lg transform max-lg:w-full ${
+          isCartOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 ease-in-out z-50`}
+      >
+        <div>
+          <p className="heading6 absolute top-6 left-8 text-black max-md:headingMobile6">Shopping Cart</p>
+          <button
+            className="absolute top-5 right-8 text-black"
+            onClick={() => setIsCartOpen(false)}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div className="flex mt-[65px] text-lg font-semibold gap-4 border-t p-8 border-b max-md:flex-col">
+          <img className="w-40 h-40 border" src={assets.rosyDelight} alt="Rosy Delight" />
+          <div className="flex w-full justify-between items-center max-md:items-end">
+            <div className="flex flex-col gap-2">
+              <p className="subtitle max-md:subtitleMobile">Rosy Delight</p>
+              <p className="body max-md:bodyMobile">Quantity (1)</p>
+              <p className="subtitle max-md:subtitleMobile">$100</p>
+            </div>
+          <div>
+            <p className="links font-semibold text-gray max-md:linksMobile">remove</p>
+          </div>
+          </div>
+        </div>
+        <div className="flex flex-col border-b border-gray-300 p-8 gap-4">
+          <div className="flex gap-8 items-center justify-between">
+            <p className="heading5 max-md:headingMobile5">Subtotal</p>
+            <p className="heading5 max-md:headingMobile5">$100.00</p>
+          </div>
+        </div>
+        <div className="flex border-b p-8 gap-4">
+          <div className="flex gap-8 items-center justify-between">
+            <p className="body text-gray max-md:bodyMobile">Gift Message</p>
+          </div>
+        </div>
+        <div className="flex border-b p-7 gap-4">
+          <div className="flex items-center justify-between w-full">
+            <p className="caption flex items-center text-center justify-center w-full px-32 max-lg:px-52 max-md:captionMobile max-md:px-4">Shipping & taxes calculated at checkout
+            Free standard shipping within Kyiv</p>
+          </div>
+        </div>
+        <div className="flex flex-col border-b ">
+          <div className="flex gap-8 items-center justify-between">
+            <button className="button bg-black w-full text-white p-4 gap-4 max-md:text-buttonMobile">Checkout</button>
           </div>
         </div>
       </div>
@@ -137,6 +206,12 @@ const Navbar = () => {
         <div
           className="fixed inset-0 bg-black opacity-50 z-40 lg:hidden"
           onClick={() => setIsOpen(false)}
+        ></div>
+      )}
+      {isCartOpen && (
+        <div
+          className="fixed inset-0 bg-black opacity-50 z-40"
+          onClick={() => setIsCartOpen(false)}
         ></div>
       )}
     </nav>

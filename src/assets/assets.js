@@ -8,6 +8,8 @@ import telegram from './icons/telegram.png'
 import google from './icons/google.png'
 import arrowLeft from './icons/arrow-left.svg'
 import arrowRight from './icons/arrow-right.svg'
+import arrowLeftNew from './icons/arrowLeftNew.svg'
+import arrowRightNew from './icons/arrowRightNew.svg'
 import phone from './icons/phone.svg'
 import location from './icons/maps.svg'
 
@@ -21,6 +23,19 @@ import freshners from './images/freshners.png'
 import kyivLuxe from './images/kyivLuxe.png'
 import personWithFlowers from './images/personWithFlowers.png'
 import wedding from './images/wedding.png'
+import rosyDelight from './images/rosyDelight.jpg'
+import freshFlowersCategory from './images/freshFlowersCategory.png'
+import snowfall from './images/snowfall.jpg'
+import dawnsDelight from './images/dawnsDelight.png'
+import pinkElegance  from './images/pinkElegance.png'
+import rusticCharm  from './images/rusticCharm.png'
+import autumnSymphony  from './images/autumnSymphony.png'
+import rosyDelightCategory  from './images/rosyDelight.png'
+import serenity  from './images/serenity.png'
+import blueHarmony  from './images/blueHarmony.png'
+import mysticalMajesty  from './images/mysticalMajesty.png'
+import blazingBlossoms  from './images/blazingBlossoms.png'
+
 
 export const assets = {
     // Icons
@@ -32,6 +47,8 @@ export const assets = {
     google,
     arrowLeft,
     arrowRight,
+    arrowLeftNew,
+    arrowRightNew,
     phone,
     location,
 
@@ -44,5 +61,17 @@ export const assets = {
     freshners,
     kyivLuxe,
     personWithFlowers,
-    wedding
+    wedding,
+    rosyDelight,
+    freshFlowersCategory,
+    snowfall,
+    dawnsDelight,
+    pinkElegance,
+    rusticCharm,
+    autumnSymphony,
+    rosyDelightCategory,
+    serenity,
+    blueHarmony,
+    mysticalMajesty,
+    blazingBlossoms,
 }

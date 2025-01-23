@@ -68,7 +68,8 @@ export default {
         '140': '1.4',
       },
       backgroundImage: {
-        'wedding': "url('assets/images/wedding.png')"
+        'wedding': "url('assets/images/wedding.png')",
+        'freshFlowers': "url('assets/images/freshFlowersCategory.png')"
       },
     },
   },
