@@ -63,8 +63,12 @@ export default {
       },
       lineHeight: {
         // 100% = leading-tight
+        '100': '1',
         '120': '1.2',
         '140': '1.4',
+      },
+      backgroundImage: {
+        'wedding': "url('assets/images/wedding.png')"
       },
     },
   },

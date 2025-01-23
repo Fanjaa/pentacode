@@ -100,7 +100,7 @@
     .linksMobile {
         @apply text-linksMobile font-medium leading-120;
     }
-    .overlineMobile {
+    .overlinesMobile {
         @apply text-overlineMobile font-medium leading-120 uppercase;
     }
     .captionMobile {
